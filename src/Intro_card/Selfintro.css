@@ -10,7 +10,7 @@ h1.Name{
 .Name {
   text-transform: uppercase;
   font-weight: 600;
-  background-image: url('./clip.jpg');
+  background-image: url('/clip.jpg');
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
