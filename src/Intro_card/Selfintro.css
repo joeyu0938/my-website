@@ -1,0 +1,31 @@
+h1{
+  font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+  margin-bottom: 0;
+}
+
+.Name {
+  text-transform: uppercase;
+  font-size: clamp(2rem,10vw,3rem);
+  font-weight: 600;
+  background-image: url('./clip.jpg');
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-change 10s infinite linear;
+}
+
+h2{
+  margin-top: 0;
+}
+
+@keyframes gradient-change {
+  0% {
+    background-position: 0% ;
+  }
+  100% {
+    background-position: 100%;
+  }
+  
+}
+

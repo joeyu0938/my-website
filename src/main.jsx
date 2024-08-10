@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import Selfintro from './Intro_card/Selfintro.jsx'
+import Information_drawer from './Information/Information_drawer.jsx'
 import './index.css'
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -10,15 +11,15 @@ import { Margin } from '@mui/icons-material';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid  container columnSpacing={2}>
-        <Grid item xs={12} md={4} >
-          <App/>
+    <Box sx={{ flexGrow: 1}}>
+      <Grid container columnSpacing={2}>
+        <Grid item xs={12} md={3} >
+          <Selfintro/>
         </Grid>
-        <Grid item xs={12} md={8}>
-          <App/>
+        <Grid item xs={12} md={9}>
+          <Information_drawer/>
         </Grid>
       </Grid>
     </Box>
-  </StrictMode>,
+  </StrictMode>
 )
