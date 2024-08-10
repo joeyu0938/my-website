@@ -11,7 +11,7 @@ import { Margin } from '@mui/icons-material';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Box sx={{ flexGrow: 1}}>
+    <Box>
       <Grid container columnSpacing={2}>
         <Grid item xs={12} md={3} >
           <Selfintro/>

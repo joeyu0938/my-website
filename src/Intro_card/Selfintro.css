@@ -1,11 +1,14 @@
-h1{
+:root{
   font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+
+h1.Name{
   margin-bottom: 0;
+  font-size: clamp(2rem,10vw,3rem);
 }
 
 .Name {
   text-transform: uppercase;
-  font-size: clamp(2rem,10vw,3rem);
   font-weight: 600;
   background-image: url('./clip.jpg');
   background-size: 100%;
@@ -15,8 +18,10 @@ h1{
   animation: gradient-change 10s infinite linear;
 }
 
-h2{
+h2.Name {
   margin-top: 0;
+  margin-bottom: 0;
+  font-size: clamp(1rem,10vw,2rem);
 }
 
 @keyframes gradient-change {
@@ -29,3 +34,32 @@ h2{
   
 }
 
+.borderLimit{
+  width: clamp(10rem,50vw,15rem);
+  height: clamp(10rem,50vw,15rem);
+  margin-top: 1rem;
+  border-radius: 50%;
+  border: 5px solid lightgray;
+  overflow: hidden;
+}
+
+.avatar{
+  width: 100%;
+  height: 100%;
+}
+
+/* .avatar:hover{
+  width: 150%;
+  height: 150%;
+  transform: translate(-15%);
+} */
+
+.image{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+strong{
+  text-align: center;
+  color:gray
+}

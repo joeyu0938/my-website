@@ -6,9 +6,10 @@
   width: 100%;
   animation: gradient-change 5s infinite linear;
 }
-/* 
-body {
-  margin:5px;
+ 
+/* body {
+  margin:0;
+  padding: 0;
 } */
 
 @keyframes gradient-change {
