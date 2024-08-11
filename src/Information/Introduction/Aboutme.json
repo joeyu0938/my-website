@@ -1,0 +1,12 @@
+{
+    "Aboutme":{
+        "profile": "I am a hard-working and responsible person. Capable of finishing task individually or cooperating with others. Due to the work experience and a few team project in my school life, I learned the importance of teamwork and communication. During the whole of one year, I had helped doing the research with my professor and proposed many new idea. My biggest interest is learning new technique and creating novel ways of solving problems.",
+        "Skills": [
+            "Create and Fine-tune model with Pytorch and Tensorflow","Familiar with Linux OS and terminal command","Familiar with using Git and Docker","Digital Image processing","Socket programming(Client/Server , P2P)","Frontend( React + JS)","Backend( Flask + SQL)","IT  maintenance experience"
+        ],
+        "interest": "",
+        "language": "C/C++ , C# , Python , JavaScript , html/CSS ,Bash Shell , Json",
+        "Interest": "",
+        "GPA":3.7
+    }   
+}

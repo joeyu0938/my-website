@@ -12,7 +12,7 @@ import { Margin } from '@mui/icons-material';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Box>
-      <Grid container columnSpacing={2}>
+      <Grid container columnSpacing={2} rowSpacing={15}>
         <Grid item xs={12} md={3} >
           <Selfintro/>
         </Grid>
