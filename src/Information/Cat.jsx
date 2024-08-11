@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function Cat(props) {
 
-  var show = 5;
+  var show = 4;
 
   if(props.Front == props.id){
     show = 0;

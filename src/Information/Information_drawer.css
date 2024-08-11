@@ -14,8 +14,9 @@
     width: 250px;
     top:20%;
     transform-style: preserve-3d;
-    transform: perspective(1000px); 
-    animation: autoRun 60s linear infinite;
+    transform: perspective(1000px);
+    /* animation: autoRun 60s linear infinite; */
+    
 }
 
 @keyframes autoRun{
@@ -30,8 +31,11 @@
 .banner .slider .item{
     position: absolute;
     inset: 0 0 0 0;
+    transition: all 0.5s linear ;
     transform:
-        rotateY(calc(var(--pos) * (360 / var(--num) * 1deg))) 
+        rotateY(calc((var(--pos) - var(--front) ) * (360 / var(--num) * 1deg))) 
         translateZ(400px)
+        rotatex(-8deg)
         translateY(-2rem);
+        
 }
