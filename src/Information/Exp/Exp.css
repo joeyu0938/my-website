@@ -1,6 +1,18 @@
+
+@media (min-width: 390px) {
 .exp_image{
     margin: 1rem;
-    width: 45%;
+    width: 90%;
     border-radius: 2rem;
     box-shadow: 9px 5px 5px black;
+  }
+}
+
+  @media screen and (min-width: 1000px) {
+    .exp_image{
+      margin: 1rem;
+      width: 45%;
+      border-radius: 2rem;
+      box-shadow: 9px 5px 5px black;
+    }
   }
