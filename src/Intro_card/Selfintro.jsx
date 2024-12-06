@@ -23,7 +23,8 @@ const card ={
   padding:2,
   display: "flex",
   flexDirection: 'column',
-  alignItems:'center',
+  justifyItems:'center',
+  alignItems:"center",
   height: '100%',
 }
 const text = {
@@ -41,14 +42,14 @@ function Selfintro() {
       </div>
       <h1 className='Name'>Joe Yu</h1>
       <h2 className='Name'>余炘璋</h2>
-      <List>
+      <List sx={{width:'100%'}}>
           <ListItem>
             <ListItemAvatar>
               <Avatar>
                 <HouseIcon/>
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primaryTypographyProps={{ style: text }}primary="Taichung City,South Dist"/>
+            <ListItemText primaryTypographyProps={{ style: text }} primary="Taichung City,South Dist"/>
           </ListItem>
           <ListItem>
             <ListItemAvatar>
@@ -56,7 +57,7 @@ function Selfintro() {
                 <MailIcon/>
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primaryTypographyProps={{ style: text }}primary="a0985339492@gmail.com"/>
+            <ListItemText primaryTypographyProps={{ style: text }} primary="a0985339492@gmail.com"/>
           </ListItem>
           <ListItem>
             <ListItemAvatar>
@@ -80,13 +81,13 @@ function Selfintro() {
       <strong>Bachelor of Computer Science & Information Engineering,Jun 2024</strong>
       <Stack direction="row" spacing={2} sx={{marginTop:"2rem",transform:'scale(1.5)',color:'white'}}>
         <Tooltip title="Github" >
-          <GitHubIcon onClick={() => window.location.replace('https://github.com/joeyu0938')}/>
+          <GitHubIcon onClick={() => window.open('https://github.com/joeyu0938')}/>
         </Tooltip>
         <Tooltip  title="Github Page" >
-          <WebAssetIcon onClick={() => window.location.replace('https://joeyu0938.github.io/my-website/')}/>
+          <WebAssetIcon onClick={() => window.open('https://joeyu0938.github.io/my-website/')}/>
         </Tooltip>
         <Tooltip title="Resume">
-          <BookIcon onClick={() => window.location.replace('')}/>
+          <BookIcon onClick={() => window.open('./resume.pdf')}/>
         </Tooltip>
       </Stack>
     </Paper>

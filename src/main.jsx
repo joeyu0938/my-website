@@ -6,17 +6,17 @@ import './index.css'
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import { Margin } from '@mui/icons-material';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Box>
-      <Grid container columnSpacing={2} rowSpacing={15}>
-        <Grid item xs={12} md={3} >
+      <Grid container columnSpacing={5} rowSpacing={15}>
+        <Grid size={{ xs: 12, md: 3 }} >
           <Selfintro/>
         </Grid>
-        <Grid item xs={12} md={9}>
+        <Grid size={{ xs: 12, md: 9}}>
           <Information_drawer/>
         </Grid>
       </Grid>

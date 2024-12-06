@@ -1,0 +1,70 @@
+{
+    "Project":[
+        {
+            "Name":"Capstone(Third price in Department’s project contest) : Photo-Realistic Lighting System for AR Applications",
+            "Descript":"Image processing for feature enhancement and fine-tune models for AR rendering",
+            "img_path":"./Project_img/Photo-Realistic/Capstone_pic.jpg",
+            "Type":"",
+            "Detail":"",
+            "Vid_path":"https://youtu.be/6A3kA957Oz8",
+            "Drive_path":""
+        },{
+            "Name":"Helping Map software base on block chain technique",
+            "Descript":"",
+            "img_path":"./Project_img/Helping_Map/map.jpg",
+            "Type":"",
+            "Detail":"",
+            "Vid_path":"https://www.youtube.com/watch?v=6TXSPJ-JmEI&t=2s",
+            "Drive_path":""
+        },{
+            "Name":"3D object Rendering (base on OpenGL)",
+            "Descript":"",
+            "img_path":"./Project_img/3D-object-Rendering/img3d.jpg",
+            "Type":"",
+            "Detail":"",
+            "Vid_path":"",
+            "Drive_path":""
+        },{
+            "Name":"Web server status and attack monitoring software",
+            "Descript":"",
+            "img_path":"./Project_img/Web-server-status/detect.jpg",
+            "Type":"",
+            "Detail":"",
+            "Vid_path":"",
+            "Drive_path":""
+        },{
+            "Name":"C# window form game (P2P)",
+            "Descript":"",
+            "img_path":"./Project_img/winform_game/img1.jpg",
+            "Type":"",
+            "Detail":"",
+            "Vid_path":"",
+            "Drive_path":""
+        },{
+            "Name":"Implement SH&SG rendering and median cut method for feature extraction",
+            "Descript":"",
+            "img_path":"",
+            "Type":"",
+            "Detail":"",
+            "Vid_path":"",
+            "Drive_path":""
+        },{
+            "Name":"Multimedia Techniques & Applications : Using blender and Unity",
+            "Descript":"",
+            "img_path":"./Project_img/Multimedia_Tech/image.jpg",
+            "Type":"",
+            "Detail":"",
+            "Vid_path":"https://www.youtube.com/watch?v=s4cKcWy4YGg",
+            "Drive_path":""
+        }
+        ,{
+            "Name":"Socket P2P chat",
+            "Descript":"",
+            "img_path":"",
+            "Type":"",
+            "Detail":"",
+            "Vid_path":"https://www.youtube.com/watch?v=WUCOAqY8W_c",
+            "Drive_path":""
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "t":[{
+            "Event_time": "2021",
+            "Event": "Graduated from Washington High school",
+            "Detail": [
+                ""
+            ]
+        },{
+            "Event_time": "2021",
+            "Event": "Studied At National Tapei University",
+            "Detail": [
+                "Major in Computer Science"
+            ]
+        },{
+            "Event_time": "2022",
+            "Event": "Became Director Of CS Student Association",
+            "Detail": [
+                ""
+            ]
+        },{
+            "Event_time": "2022",
+            "Event": "Worked At NTPU Operation Section",
+            "Detail": [
+                ""
+            ]
+        },{
+            "Event_time": "2024",
+            "Event": "Graduated From NTPU",
+            "Detail": [
+                ""
+            ]
+        },{
+            "Event_time": "2024",
+            "Event": "Fullfilled Mandatory Military service ",
+            "Detail": [
+                ""
+            ]
+        },{
+            "Event_time": "Now",
+            "Event": "Ongoing",
+            "Detail": [
+                ""
+            ]
+        }
+    ]
+}

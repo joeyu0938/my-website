@@ -1,10 +1,10 @@
 :root{
-  background: no-repeat  linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: no-repeat  linear-gradient(to right, #223c68, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: 0 0;
-  background-size: 500% 500%;
+  background-size: 500% 1000%;
   height: 100%;
   width: 100%;
-  animation: gradient-change 5s infinite linear;
+  /* animation: gradient-change 5s infinite linear; */
 }
  
 /* body {
@@ -12,15 +12,15 @@
   padding: 0;
 } */
 
-@keyframes gradient-change {
+/* @keyframes gradient-change {
   0% {
-    background-position: 0% 0%;
+    background-position: -50% -50%;
   }
   50% {
     background-position: 90% 90%;
   }
   100% {
-    background-position: 0% 0%;
+    background-position: -50% -50%;
   }
   
-}
+} */
