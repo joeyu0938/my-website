@@ -1,7 +1,5 @@
 :root{
-  background: no-repeat  linear-gradient(to right, #223c68, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-position: 0 0;
-  background-size: 500% 1000%;
+  background: #223c68;/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100%;
   width: 100%;
   /* animation: gradient-change 5s infinite linear; */

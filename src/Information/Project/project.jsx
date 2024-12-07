@@ -77,7 +77,7 @@ function Project({projectpref}) {
                       <YouTubeIcon onClick={() => window.open(p["Vid_path"])}></YouTubeIcon>
                     </Tooltip>
                     <Tooltip title="Learn more">
-                      <LinkIcon sx={{marginLeft:'1rem'}}></LinkIcon>
+                      <LinkIcon onClick={() => window.open(p["Drive_path"])} sx={{marginLeft:'1rem'}}></LinkIcon>
                     </Tooltip>
                     <ExpandMore
                         expand={expanded}
