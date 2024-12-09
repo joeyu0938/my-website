@@ -49,16 +49,17 @@ function Project({projectpref}) {
     
     
     return(
-        <Box ref={projectpref}  display='flex' sx={{ flexDirection:'column' ,justifyContent:"space-between"}}>
-            <Typography component={'span'} justifyItems='flex-start' sx={{ typography: { sm: 'h2', xs: 'h4' }}} color="white">
+        <Box ref={projectpref} sx={{justifyItems:'center'}}>
+            <Typography component={'span'} justifyItems='flex-start' sx={{width: { sm: '55%', xs: '100%' },fontSize:{sm:'60px',xs:'50px'},fontWeight:'bold'}} color="white">
                     Project
             </Typography>
-            <Box display='flex' flexWrap='wrap' justifyContent='space-around' alignContent='space-between' >
+            <Box display='flex' flexWrap='wrap' justifyContent='space-around' alignContent='space-between' sx={{marginTop:'3rem'}}>
                 { project.map((p,i)=>
                 <Card sx={{ maxWidth: 345,m: '2rem',bgcolor:'#606060',height: "100%",display: "flex",flexDirection: "column", borderRadius:'1rem',boxShadow:'5px 5px 5px black;'}} key={i}>
                     <Box sx={{ position: 'relative'}}>
                     <CardMedia
                         component="img"
+                        height='300px'
                         sx={{maxHeight:'350px'}}
                         image={p["img_path"].length != 0 ? p["img_path"] : './Project_img/notfound.jpg'}
                     />

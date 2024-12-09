@@ -78,7 +78,7 @@ function Selfintro() {
       </List>
       <h2 className="Name">Education</h2>
       <img src="./school2.jpg" className='image'></img>
-      <strong>Bachelor of Computer Science & Information Engineering,Jun 2024</strong>
+      <strong className='school '>Bachelor of Computer Science & Information Engineering,Jun 2024</strong>
       <Stack direction="row" spacing={2} sx={{marginTop:"2rem",transform:'scale(1.5)',color:'white'}}>
         <Tooltip title="Github" >
           <GitHubIcon onClick={() => window.open('https://github.com/joeyu0938')}/>

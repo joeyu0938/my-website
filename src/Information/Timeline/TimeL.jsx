@@ -14,11 +14,11 @@ function Time_exp({timepref}) {
     const T = t;
 
     return(
-        <Box ref={timepref}>
-             <Typography sx={{ typography: { sm: 'h2', xs: 'h4' }}} color="white">
+        <Box ref={timepref} >
+             <Typography component={'span'} sx={{width: { sm: '55%', xs: '100%' },fontSize:{sm:'60px',xs:'50px'},fontWeight:'bold'}}color="white">
                 TimeLine
             </Typography>
-            <Timeline position="alternate">
+            <Timeline position="alternate" sx={{marginTop:'4rem'}}> 
                 {
                     T.t.map((evnt,i)=>
                         <TimelineItem key={i}>

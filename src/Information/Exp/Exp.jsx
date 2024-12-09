@@ -24,7 +24,7 @@ function Work_exp({expref}) {
         <Box ref={expref}   sx={{ flexDirection: {sm:'row',xs:'column'} ,display:'flex',justifyContent:"space-between"}}>
             <img src="./exp.jpg"  className='exp_image'></img>
             <Box>
-                <Typography component={'span'} justifyItems='flex-start' sx={{ typography: { sm: 'h2', xs: 'h4' },fontWeight:'bold'}} color="white">
+                <Typography component={'span'} justifyItems='flex-start' sx={{width: { sm: '55%', xs: '100%' },fontSize:{sm:'60px',xs:'50px'},fontWeight:'bold'}}color="white">
                     Working Experience
                 </Typography>
                 <List>

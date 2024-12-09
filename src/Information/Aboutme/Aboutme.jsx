@@ -22,9 +22,10 @@ function Aboutme({aboutref}) {
         fontSize: {sm:'1.4rem',xs:'1rem'},
         alignItems: 'center',
         flexWrap: 'wrap'}
+    
     return(
         <Box ref={aboutref}>
-            <Typography sx={{ typography: { sm: 'h2', xs: 'h4' },fontWeight:'bold'}} color="white">
+            <Typography component={'span'} sx={{width: { sm: '55%', xs: '100%' },fontSize:{sm:'60px',xs:'50px'},fontWeight:'bold'}} color="white">
                 About Me
             </Typography>
             <Box sx={{ display: 'flex' ,flexWrap: 'wrap', justifyContent:"space-between"}}>
