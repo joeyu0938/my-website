@@ -13,41 +13,51 @@ import IconButton from '@mui/material/IconButton';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkIcon from '@mui/icons-material/Link';
 import Tooltip from '@mui/material/Tooltip';
+import ExpandMoreButton from './Expand'; 
+import Collapse from '@mui/material/Collapse';
+
 function Project({projectpref}) {
 
     const project = project_list.Project;
     
-    const ExpandMore = styled((props) => {
-        const { expand, ...other } = props;
-        return <IconButton {...other} />;
-      })(({ theme }) => ({
-        marginLeft: 'auto',
-        transition: theme.transitions.create('transform', {
-          duration: theme.transitions.duration.shortest,
-        }),
-        variants: [
-          {
-            props: ({ expand }) => !expand,
-            style: {
-              transform: 'rotate(0deg)',
-            },
-          },
-          {
-            props: ({ expand }) => !!expand,
-            style: {
-              transform: 'rotate(180deg)',
-            },
-          },
-        ],
-      }));
-    
-    const [expanded, setExpanded] = React.useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-      };
-    
-    
+    const [expandedStates, setExpandedStates] = React.useState({});
+
+    const handleExpandClick = (projectId) => {
+        setExpandedStates(prev => ({
+            ...prev,
+            [projectId]:!prev[projectId]
+        }));
+    };
+
+
+    const Line_wrap = (text) => {
+        if (!text) return null;
+        return text.split('\n').map((line, index) => {
+            const isImage = /\.(jpg|jpeg|png|gif|webp)$/i.test(line.trim());
+            
+            if (isImage) {
+                return (
+                    <React.Fragment key={index}>
+                        <img 
+                            src={line.trim()} 
+                            alt="project detail" 
+                            style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+                        />
+                        <br />
+                    </React.Fragment>
+                );
+            }
+            
+            return (
+                <React.Fragment key={index}>
+                    {line}
+                    <br />
+                </React.Fragment>
+            );
+        });
+    };
+
     return(
         <Box ref={projectpref} sx={{justifyItems:'center'}}>
             <Typography component={'span'} justifyItems='flex-start' sx={{width: { sm: '55%', xs: '100%' },fontSize:{sm:'60px',xs:'50px'},fontWeight:'bold'}} color="white">
@@ -80,15 +90,16 @@ function Project({projectpref}) {
                     <Tooltip title="Learn more">
                       <LinkIcon onClick={() => window.open(p["Drive_path"])} sx={{marginLeft:'1rem'}}></LinkIcon>
                     </Tooltip>
-                    <ExpandMore
-                        expand={expanded}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
-                        aria-label="show more"
-                        >
-                    <ExpandMoreIcon />
-                    </ExpandMore>
+                      <ExpandMoreButton id={i}
+                        expanded={expandedStates[i]}
+                        onExpandClick={handleExpandClick}></ExpandMoreButton>
                     </CardActions>
+                    <Collapse in={expandedStates[i]} timeout="auto" unmountOnExit>
+                      <CardContent>
+                        
+                        <Typography>{Line_wrap(p["Detail"])}</Typography>
+                      </CardContent>
+                    </Collapse>
                 </Card>
                 
                 )}

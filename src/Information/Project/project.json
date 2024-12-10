@@ -1,19 +1,19 @@
 {
     "Project":[
         {
-            "Name":"Capstone(Third price in Department’s project contest) : Photo-Realistic Lighting System for AR Applications",
+            "Name":"Capstone(Third price in Department Project Contest) : Photo-Realistic Lighting System for AR Applications",
             "Descript":"Image processing for feature enhancement and fine-tune models for AR rendering",
             "img_path":"./Project_img/Photo-Realistic/Capstone_pic.jpg",
             "Type":"",
-            "Detail":"",
+            "Detail":" ./Project_img/Photo-Realistic/Poster.jpg \nBrand new method:\n1. Simulate the area light by cutting it into several point lights -> the calculation is reduced greatly\n2. Combine gradient map with HDR, then put it into Yolov7 -> Greatly improve the accuracy of judgment and classification\n3. Integrate Unity with our neural network, and achieve the real-time rendering",
             "Vid_path":"https://youtu.be/6A3kA957Oz8",
             "Drive_path":"https://drive.google.com/drive/folders/1LWgYc6DBYMylGGKQijMpwjPpkoKVvYnU?usp=sharing"
         },{
             "Name":"Helping Map software base on block chain technique",
-            "Descript":"",
-            "img_path":"./Project_img/Helping_Map/map.jpg",
+            "Descript":" ",
+            "img_path":"./Project_img/Helping_Map/map.jpg ",
             "Type":"",
-            "Detail":"",
+            "Detail":"./Project_img/Helping_Map/method.jpg \nAssist Map allows users to establish required requirements on the blockchain to build a more secure protection network. After users submit, they will not be deleted for other reasons. After creation, it will also be made public on the chain. Let others review and assist.",
             "Vid_path":"https://www.youtube.com/watch?v=6TXSPJ-JmEI&t=2s",
             "Drive_path":"https://drive.google.com/drive/u/0/folders/1VzU-j8CWh37IKSD0JJsTl_8avrqmuSxj"
         },{
@@ -43,7 +43,7 @@
         },{
             "Name":"Implement SH&SG rendering and median cut method for feature extraction",
             "Descript":"",
-            "img_path":"",
+            "img_path":"./Project_img/SH&SG_render/SGrender.jpg",
             "Type":"",
             "Detail":"",
             "Vid_path":"",
